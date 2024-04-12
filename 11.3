@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int main() {
+    // a) вещественные значения от 0 до 1
+    double arr1[15];
+    srand(time(NULL));
+    for (int i = 0; i < 15; i++) {
+        arr1[i] = (double)rand() / RAND_MAX;
+        std::cout << arr1[i] << std::endl;
+    }
+
+    // b) вещественные значения х (22 «х < 23)
+    double arr2[15];
+    for (int i = 0; i < 15; i++) {
+        arr2[i] = 22 + ((double)rand() / RAND_MAX);
+        std::cout << arr2[i] << std::endl;
+    }
+
+    // c) вещественные значения х (0 < x < 10)
+    double arr3[15];
+    for (int i = 0; i < 15; i++) {
+        arr3[i] = ((double)rand() / RAND_MAX) * 10;
+        std::cout << arr3[i] << std::endl;
+    }
+
+    // d) вещественные значения х (-50 < x < 50)
+    double arr4[15];
+    for (int i = 0; i < 15; i++) {
+        arr4[i] = ((double)(rand() % 100) - 50);
+        std::cout << arr4[i] << std::endl;
+    }
+
+    // e) целые значения от 0 до 10 включительно
+    int arr5[15];
+    for (int i = 0; i < 15; i++) {
+        arr5[i] = rand() % 11;
+        std::cout << arr5[i] << std::endl;
+    }
+
+    return 0;
+}
