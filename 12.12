@@ -1,0 +1,11 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string word = "hello";
+    char lastChar = word.back();
+    
+    std::cout << "The last character of the word is: " << lastChar << std::endl;
+    
+    return 0;
+}
