@@ -1,9 +1,0 @@
-#include <iostream>
-#include <string>
-
-int main() {
-    std::string word = "Привет";
-    int k = 3;
-    std::cout << "k-й символ: " << word << std::endl;
-    return 0;
-}
