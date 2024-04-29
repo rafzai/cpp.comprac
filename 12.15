@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string word = "radar";
+
+    if (word[0] == word[word.length() - 1]) {
+        std::cout << "The word starts and ends with the same letter." << std::endl;
+    } else {
+        std::cout << "The word does not start and end with the same letter." << std::endl;
+    }
+
+    return 0;
+}
