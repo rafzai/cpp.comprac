@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string word = "example";
+
+    if (word[1] == word[3]) {
+        std::cout << "Second and fourth characters are the same." << std::endl;
+    } else {
+        std::cout << "Second and fourth characters are different." << std::endl;
+    }
+
+    return 0;
+}
